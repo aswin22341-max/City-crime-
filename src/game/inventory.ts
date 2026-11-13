@@ -1,0 +1,72 @@
+import type { InventoryItem } from './types';
+
+export function createDefaultInventory(): InventoryItem[] {
+  return [
+    {
+      id: 'gadget_fist',
+      name: 'Unarmed / Sprint',
+      category: 'gadget',
+      description: 'Standard movement and vehicle entry.',
+      quantity: 1,
+      maxQuantity: 1,
+      gadgetId: 'fist',
+    },
+    {
+      id: 'gadget_emp',
+      name: 'EMP Stunner',
+      category: 'gadget',
+      description: 'Fictional non-lethal pulse device that temporarily stalls pursuing police & nearby traffic.',
+      quantity: 1,
+      maxQuantity: 1,
+      ammo: 6,
+      maxAmmo: 12,
+      gadgetId: 'emp_stunner',
+    },
+    {
+      id: 'gadget_jammer',
+      name: 'Signal Jammer',
+      category: 'gadget',
+      description: 'Scrambles police dispatch radar to accelerate wanted cooldown.',
+      quantity: 1,
+      maxQuantity: 1,
+      ammo: 3,
+      maxAmmo: 6,
+      gadgetId: 'signal_jammer',
+    },
+    {
+      id: 'gadget_turbo',
+      name: 'Nitro Capacitor',
+      category: 'gadget',
+      description: 'Injects instant speed boost on foot or inside any vehicle.',
+      quantity: 1,
+      maxQuantity: 1,
+      ammo: 4,
+      maxAmmo: 8,
+      gadgetId: 'turbo_dash',
+    },
+    {
+      id: 'item_medkit',
+      name: 'First-Aid Kit',
+      category: 'consumable',
+      description: 'Restores +50 Health instantly.',
+      quantity: 2,
+      maxQuantity: 5,
+    },
+    {
+      id: 'item_armor',
+      name: 'Tactical Armor Plate',
+      category: 'consumable',
+      description: 'Restores +50 Body Armor.',
+      quantity: 1,
+      maxQuantity: 5,
+    },
+    {
+      id: 'item_repair',
+      name: 'Field Repair Wrench',
+      category: 'consumable',
+      description: 'Restores current vehicle condition to 100%.',
+      quantity: 2,
+      maxQuantity: 5,
+    },
+  ];
+}
